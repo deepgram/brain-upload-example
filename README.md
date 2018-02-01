@@ -7,6 +7,11 @@ A simple system for uploading files
     pip install -e .
 
 ### Usage example
+To upload a file in a directory:
+    cd some/directory/somewhere
+    brainupload -u my.userid -t my.token -s https://mycustom-brain.deepgram.com -f somefile.wav
+
+
 To upload all files in a directory, go to that directory and run:
 
     brainupload -u my.userid -t my.token -s https://mycustom-brain.deepgram.com
