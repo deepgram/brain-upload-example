@@ -22,5 +22,5 @@ Or use -f to specify a location:
     brainupload -u my.userid -t my.token -s https://mycustom-brain.deepgram.com -f /some/directory/*
 
 
-Get the token and userid from the 'api' link in on your brain instance! Files will appear in the 'My Files' page of brain instance you uploaded to.
+Get the token and userid from the 'api' link on your brain instance! Files will appear in the 'My Files' page of brain instance you uploaded to.
 
