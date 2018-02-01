@@ -8,6 +8,7 @@ A simple system for uploading files
 
 ### Usage example
 To upload a file in a directory:
+
     cd some/directory/somewhere
     brainupload -u my.userid -t my.token -s https://mycustom-brain.deepgram.com -f somefile.wav
 
