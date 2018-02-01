@@ -10,4 +10,5 @@ A simple system for uploading files
 To upload all files in a directory, go to that directory and run:
 
     brainupload -u my.userid -t my.token -s https://mycustom-brain.deepgram.com
-Get the token and userid from the 'api' link in on your brain instance!
+Get the token and userid from the 'api' link in on your brain instance! Files will appear in the 'My Files' page of brain instance you uploaded to.
+
