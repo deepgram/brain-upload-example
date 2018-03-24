@@ -93,9 +93,13 @@ def main():
     print('Waiting for assets to process...')
     for assetId in loadingAssets.copy():
       asset = brainAPI.asset(assetId)
-      if asset['transcript'] is not None:
+      if asset['status'] == 'finished':
         loadingAssets.remove(assetId)
         allAssets[asset['metadata']['filename']] = (asset['asset_id'], asset['content_url_wav'], asset['duration'])
+      elif asset['status'] == 'failed':
+        loadingAssets.remove(assetId)
+        print('Unable to load: {}'.format(assetIds[assetId]))
+
     if len(loadingAssets) > 0:
       #give it a few second until we check again
       time.sleep(2.0)
